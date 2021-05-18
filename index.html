@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charser="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>teste</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="table-responsive">
+            <h4>Projetos Cadastrados</h4>
+            <table id="p-table" class="table">
+                <thead class="thead">
+                    <th scope="col">Id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Data Inicial</th>
+                    <th scope="col">Data Final</th>
+                    <th scope="col">% Completo</th>
+                    <th scope="col">Atrasado</th>
+                </thead>
+            </table>
+        </div>
+
+
+        <form id="form" class="form">
+            <div class="inputs">
+                <div class="col-sm-6 col-md-12 col-lg-12">
+                    <label for="name" class="form-label" id="name">Nome do Projeto</label>
+                    <input type="text" class="form-control" class="name" id="name" required>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-12">
+                    <label for="initialData" class="form-label">Data Inicial</label>
+                    <input type="date" class="form-control" class="initialData" id="initialData" required>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-12">
+                    <label for="finalData" class="form-label">Data Final</label>
+                    <input type="date" class="form-control" class="finalData" id="finalData" required>
+                </div>
+                <div id="finalized">
+                    <label for="finalized" class="finalized">Finalizada</label>
+                    <input id="finalized" class="finalized" type="checkbox" value="Sim" label="Sim">
+                </div>
+                <div class="buttons text-center  ">
+                    <button type="submit" id="b-submit" class="btn btn-success">Cadastrar Projeto</button>
+                    <button type="submit" id="b-submit-a" class="btn btn-primary">Cadastrar Atividade</button>
+                    <button type="submit" id="b-cancel" class="btn btn-warning">Cancelar</button>
+                    <button type="submit" id="b-delete" class="btn btn-danger">Deletar</button>
+                </div>
+            </div>
+
+        </form>
+        <div class="table-responsive">
+            <h4>Atividades Cadastradas</h4>
+            <table id="a-table" class="table">
+                <thead class="thead">
+                    <th scope="col">Projeto</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Data Inicial</th>
+                    <th scope="col">Data Final</th>
+                    <th scope="col">Finalizada</th>
+                </thead>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/dados.js"></script>
+    <script type="text/javascript" src="js/teste.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
